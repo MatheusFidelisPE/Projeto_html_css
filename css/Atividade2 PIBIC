@@ -1,0 +1,27 @@
+
+
+Extra para a atividade 2:
+O básico mesmo é isso, saber converter pra níveis de cinza, e de níveis de cinza para binário
+Também brinque um pouco com as imagens
+
+Explicações:
+Você vai ver que elas podem ser manipuladas como matrizes tridimensionais, então é possível somar valores e outras matrizes as mesmas
+Você manda existir as novas imagens para que você perceba o que mudou após a manipulação
+Você também tem como fatiar as imagens como fatia matrizes, então pode fazer isso
+Entendi.
+Pode até trabalhar com as imagens originais (as obtidas em ambientes naturais) que provavelmente vai ter resultados bem interessantes
+A dica é: faça um roteiro de testes, um checklist mesmo, então execute cada uma das etapas para as imagens selecionadas e veja no que dá
+
+
+
+
+
+Vamos lá: sim ela desliza por toda a imagem, mas 50x50 é o tamanho da janela, e não da imagem na qual a janela vai ser aplicada
+Veja, nesse caso pegue uma imagem das originais e tente fazer o seguinte
+Use a função resize do OpenCV pra converter a imagem original pra uma imagem 600x600
+Daí você vai criar uma janela 50x50 e passar pela imagem toda, percorrendo cada linha por vez
+Com passo de 10 pixels, vai gerar um monte de fatias da imagem, então coloque pra exibir cada fatia só pra você observar se está cortando corretamente
+Daí depois brinque de: aumentar/diminuir as dimensões da janela (por exemplo, janela 100x100, 200x200), ou o tamanho do passo (ex.: 20 pixels)
+Ta certo.
+Consegui entender a ideia.
+É isso, geralmente essa abordagem é usada quando não sabemos exatamente a escala e posição na qual o objeto alvo poderá ocorrer na imagem, por isso que aumentamos gradualmente o tamanho da janela e do passo
